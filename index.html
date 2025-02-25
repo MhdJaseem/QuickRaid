@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800"
+    />
+  </head>
+  <body id="body1">
+    <div class="overall">
+      <nav>
+        <h1 onclick="home()">QuickRide</h1>
+        <img
+          src="./assets/menu.png"
+          alt="menu bar"
+          onclick="menu()"
+          id="openMenu"
+        />
+        <img
+          src="./assets/cross.png"
+          alt="close"
+          onclick="menuExit()"
+          id="closeMenu"
+        />
+        <div class="menu">
+          <a onclick="home()">Home</a>
+          <a onclick="buses()">Buses</a>
+          <a onclick="help()">Help</a>
+        </div>
+        <div class="line">
+          <p class="line1"></p>
+          <p class="line2"></p>
+        </div>
+      </nav>
+
+      <!-- route-->
+      <div class="route-overall">
+        <img src="./assets/bg2.jpg" />
+        <div class="route-info">
+          <h1>Welcome to QuickRide! Your Journey Starts Here</h1>
+          <div class="route">
+            <div class="from">
+              <label for="from"
+                ><img src="./assets/on-bus.png" alt="from"
+              /></label>
+              <input
+                type="text"
+                placeholder="enter city"
+                id="from"
+                onchange="fromPosition()"
+                required
+              />
+              <label for="from"><h3>FROM</h3></label>
+            </div>
+
+            <div class="to">
+              <label for="to">
+                <img src="./assets/off-bus.png" alt="to"
+              /></label>
+              <input
+                type="text"
+                placeholder="enter city"
+                id="to"
+                onchange="toPosition()"
+                required
+              />
+              <label for="to"><h3>TO</h3></label>
+            </div>
+          </div>
+
+          
+
+          <a href="#ind-bus-overall"><button id="search">Search</button></a>
+
+          <h1>Plan Your Trip Today!</h1>
+          <p>
+            Start your journey with QuickRide and experience the comfort of
+            booking your bus tickets online. No more long queues or last-minute
+            hassles – your next adventure is just a click away.
+          </p>
+        </div>
+      </div>
+
+      <!-- ind-bus-overall -->
+      <div id="ind-bus-overall">
+        <h1 id="ind-title">Search Results</h1>
+        <!-- bus-card 1 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+        <!-- bus-card 2 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 3 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 4 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 5 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 6 -->
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+        <!-- bus-card 7 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 8 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 9 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bus-card 10 -->
+
+        <div class="bus-card">
+          <img src="./assets/bg1.jpg" />
+
+          <!-- bus-content -->
+          <div class="bus-content">
+            <div>
+              <h1>Departure</h1>
+              <p class="dep" onchange="change()">chennai</p>
+            </div>
+
+            <div>
+              <h1>Destination</h1>
+              <p class="des" onchange="change()">madurai</p>
+            </div>
+
+            <div>
+              <h1>Date</h1>
+              <p class="date" onchange="change()">date</p>
+            </div>
+
+            <div>
+              <h1>Time</h1>
+              <p class="time" onchange="change()">time</p>
+            </div>
+
+            <div>
+              <a href="./buses.html"
+                ><button class="view-btn">View Buses</button></a
+              >
+            </div>
+
+          </div>
+        </div>
+        <img id="ind-img" src="./assets/notfound.png" alt="data not found" />
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
